@@ -1,32 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Blog</title>
+    <link rel="stylesheet" href="./contato.css">
+    <title>Contato</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="Logo.png" alt="Logo">
+            <img src="logo.png" alt="logo">
             <ul id="first">
                 <li><a href="index.html">Início</a></li>
                 <li>Sobre</li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
-            </div>
         </nav>
     </header>
 
     <main id="body">
-        <article class="content">
-            <h1 class="title">Lorem ipsum dolor sit amet</h1>
-            <span class="details">26/07/2020 às 00:04 - By: Fulano</span>
-            <img class="post-thumbnail" src="img1.png" alt="teste">
+        <section id="intro">
+            <h1 class="title">Contato</h1>
             <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum
                 vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi
                 diam lacus, suscipit nec maximus et, tincidunt at quam.
@@ -34,23 +31,45 @@
                 Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim
                 ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod
                 nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
-            <button class="b">Continuar Lendo</button>
-        </article>
+        </section>
 
+        <section id="intro2">
+            <h3 id="info">INFORMAÇÕES PARA CONTATO</h3>
+            <div class="divs">
+                <img class="icons" src="Icone1.png" alt="teste">
+                <p class="desc">Endereço</p>
+            </div>
+            <p class="minip">Av. Tancredo Neves, 2227, Ed. Salvador Prime Caminho das Árvores, Salvador • Bahia</p>
+            <div class="divs">
+                <img class="icons" src="Icone2.png" alt="teste">
+                <p class="desc"> Telefone</p>
+            </div>
+            <p class="minip">(71) 9 9999-9999 | (11) 1 1111-1111</p>
 
-        <article class="content" id="second">
-            <h1 class=title>Lorem ipsum dolor sit amet</h1>
-            <span class="details">26/07/2020 às 00:04 - By: Fulano</span>
-            <img class="post-thumbnail" src="img2.png" alt="teste">
-            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum
-                vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi
-                diam lacus, suscipit nec maximus et, tincidunt at quam.
+            <div class="divs">
+                <img class="icons" src="Icone3.png" alt="teste">
+                <p class="desc">Suporte</p>
+            </div>
+            <p class="minip">suporte@cubos.academy</p>
+        </section>
 
-                Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim
-                ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod
-                nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
-            <button class="b">Continuar Lendo</button>
-        </article>
+        <section id="intro3">
+            <h3 id='contact'>ENTRE EM CONTATO</h3>
+            <form action="">
+                <label for="nome" class="group">Nome</label>
+                <input type="text" id="nome" name="nome" class="inps">
+                <label for="email" class="group">Email</label>
+                <input type="email" id="email" name="email" class="inps">
+                <label for="assunto" class="group">Assunto</label>
+                <input type="text" id="assunto" name="assunto" class="inps">
+                <div id="textarea">
+                    <label for="comentario" class="group">Comentário</label>
+                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+            <button class="b">Enviar</button>
+            </form>
+        </section>
 
         <aside id="menu">
             <input id="inp" type="text" placeholder="    Pesquise aqui">
