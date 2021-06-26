@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Blog</title>
 </head>
 
@@ -15,7 +16,7 @@
             <img src="Logo.png" alt="Logo">
             <ul id="first">
                 <li><a href="index.html">Início</a></li>
-                <li>Sobre</li>
+                <li><a href="#">Sobre</a> </li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
             </div>
@@ -23,51 +24,70 @@
     </header>
 
     <main id="body">
-        <article class="content">
-            <h1 class="title">Lorem ipsum dolor sit amet</h1>
-            <span class="details">26/07/2020 às 00:04 - By: Fulano</span>
-            <img class="post-thumbnail" src="img1.png" alt="teste">
-            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum
-                vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi
-                diam lacus, suscipit nec maximus et, tincidunt at quam.
+        <div class="posts">
+            <article class="content">
+                <h1 class="title">Lorem ipsum dolor sit amet</h1>
+                <span class="details">26/07/2020 às 00:04 - By: Fulano</span>
+                <img class="post-thumbnail" src="img1.png" alt="teste">
+                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum
+                    vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh.
+                    Morbi
+                    diam lacus, suscipit nec maximus et, tincidunt at quam.<br><br>
 
-                Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim
-                ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod
-                nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
-            <button class="b">Continuar Lendo</button>
-        </article>
+                    Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare
+                    enim
+                    ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae
+                    euismod
+                    nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
+                <button class="b">Continuar Lendo</button>
+            </article>
 
 
-        <article class="content" id="second">
-            <h1 class=title>Lorem ipsum dolor sit amet</h1>
-            <span class="details">26/07/2020 às 00:04 - By: Fulano</span>
-            <img class="post-thumbnail" src="img2.png" alt="teste">
-            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum
-                vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi
-                diam lacus, suscipit nec maximus et, tincidunt at quam.
+            <article class="content" id="second">
+                <h1 class=title>Lorem ipsum dolor sit amet</h1>
+                <span class="details">26/07/2020 às 00:04 - By: Fulano</span>
+                <img class="post-thumbnail" src="img2.png" alt="teste">
+                <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum
+                    vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh.
+                    Morbi
+                    diam lacus, suscipit nec maximus et, tincidunt at quam.
 
-                Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim
-                ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod
-                nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
-            <button class="b">Continuar Lendo</button>
-        </article>
+                    Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare
+                    enim
+                    ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae
+                    euismod
+                    nisi elementum. Vivamus tincidunt id massa eget blandit.</p>
+                <button class="b">Continuar Lendo</button>
+            </article>
+        </div>
 
         <aside id="menu">
-            <input id="inp" type="text" placeholder="    Pesquise aqui">
-            <ul id="tema">
-                <h2 class="titleaside">Categorias</h2>
-                <li>Tecnologia</li>
-                <li>Estilo de Vida</li>
-                <li>Arte</li>
-                <li>Comida</li>
-                <li>Aventura</li>
-                <li>Moda</li>
-            </ul>
-            <h2 class="titleaside" id="sect">Publicidade</h2>
-            <ul id="pub">
-                <li><img src="./pub.png" alt="pub"></li>
-                <li><img src="./pub.png" alt="pub"></li>
-            </ul>
+            <div id="input">
+                <input id="inp" type="text" placeholder="Pesquise aqui...">
+            </div>
+            <div class="titleaside"'>
+                <h2>Categorias</h2>
+            </div>
+            <div id="navaside"></div>
+                <ul id="tema">
+                    <li id="tec">Tecnologia <span>25</span></li>
+                    <li>Estilo de Vida <span>8</span></li>
+                    <li>Arte <span>2</span> </li>
+                    <li>Comida <span>12</span></li>
+                    <li>Aventura <span>9</span></li>
+                    <li>Moda <span>12</span></li>
+                </ul>
+            </div>
+            <div id="second" class="titleaside">
+                <h2>Publicidade</h2>
+            </div>
+            <div class="navaside">
+                <ul id="pub">
+                    <li><img src="./pub.png" alt="pub"></li>
+                    <li><img src="./pub.png" alt="pub"></li>
+                    <li><img src="./pub.png" alt="pub"></li>
+                </ul>
+            </div>
         </aside>
     </main>
 
